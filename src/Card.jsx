@@ -10,6 +10,7 @@ const Card = ({ name, url, id }) => {
     <Link to={`cards/${id}`} className="card">
       <div className="card-info">
         <h1>{name}</h1>
+        <h1>The id is {id}</h1>
       </div>
       <div className="image-container">
         <img src={url}></img>

@@ -37,7 +37,14 @@ const Home = () => {
       </Button>
       <div className="card-results">
         {cards.map((card) => {
-          return <Card name={card.name} url={card.imageUrl} key={card.id} />;
+          return (
+            <Card
+              name={card.name}
+              url={card.imageUrl}
+              id={card.id}
+              key={card.id}
+            />
+          );
         })}
       </div>
     </div>

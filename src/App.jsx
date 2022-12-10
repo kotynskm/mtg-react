@@ -3,6 +3,7 @@ import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "@fontsource/roboto/300.css";
 import Home from "./Home";
+import Details from "./Details";
 
 // establish queryClient for our cache and how long items persist in cache
 const queryClient = new QueryClient({
@@ -21,6 +22,7 @@ const App = () => {
         <Link to="/">Home</Link>
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/cards/:id" element={<Details />}></Route>
         </Routes>
       </QueryClientProvider>
     </BrowserRouter>

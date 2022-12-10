@@ -7,7 +7,7 @@ const Card = ({ name, url, id }) => {
   }
   return (
     // wrap in a link so when clicked will go to card details page using ID
-    <Link to={`details/${id}`} className="card">
+    <Link to={`cards/${id}`} className="card">
       <div className="card-info">
         <h1>{name}</h1>
       </div>

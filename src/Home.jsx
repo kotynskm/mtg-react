@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 import Card from "./Card";
+import Button from "@mui/material/Button";
 
 const Home = () => {
   // set state for cards array
@@ -31,7 +32,9 @@ const Home = () => {
   return (
     <div>
       <h1>Homepage</h1>
-      <button onClick={handleClick}>Click For Cards</button>
+      <Button variant="contained" color="success" onClick={handleClick}>
+        Click For Cards
+      </Button>
       <div className="card-results">
         {cards.map((card) => {
           return <Card name={card.name} url={card.imageUrl} key={card.id} />;

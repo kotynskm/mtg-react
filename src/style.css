@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  background: url("./assets/johannes-plenio-hvrpOmuMrAI-unsplash.jpg") no-repeat
+    center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

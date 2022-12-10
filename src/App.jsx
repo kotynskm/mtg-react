@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import "@fontsource/roboto/300.css";
 import Home from "./Home";
 
 // establish queryClient for our cache and how long items persist in cache

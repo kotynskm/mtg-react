@@ -11,8 +11,6 @@ const Card = ({ name, url, id }) => {
       <div className="card-info">
         <div class="item">
           <h1>{name}</h1>
-          {/* <h1>The id is {id}</h1> */}
-
           <div className="image-container">
             <img src={url}></img>
           </div>

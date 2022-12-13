@@ -5,7 +5,6 @@ import "@fontsource/roboto/300.css";
 import Home from "./Home";
 import Details from "./Details";
 import Header from "./Header";
-import { Container } from "@mui/system";
 
 // establish queryClient for our cache and how long items persist in cache
 const queryClient = new QueryClient({
@@ -21,16 +20,14 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Container>
-        <BrowserRouter>
-          <QueryClientProvider client={queryClient}>
-            <Routes>
-              <Route path="/" element={<Home />}></Route>
-              <Route path="/cards/:id" element={<Details />}></Route>
-            </Routes>
-          </QueryClientProvider>
-        </BrowserRouter>
-      </Container>
+      <BrowserRouter>
+        <QueryClientProvider client={queryClient}>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/cards/:id" element={<Details />}></Route>
+          </Routes>
+        </QueryClientProvider>
+      </BrowserRouter>
     </div>
   );
 };

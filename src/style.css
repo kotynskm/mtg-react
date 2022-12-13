@@ -12,6 +12,7 @@ body {
   justify-content: center;
 }
 
-.container {
+.container,
+.loading-pane {
   margin-top: 100px;
 }

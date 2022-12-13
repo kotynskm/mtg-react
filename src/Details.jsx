@@ -18,9 +18,15 @@ const Details = () => {
   const card = result.data.cards[0];
 
   return (
-    <div>
-      <h1>The id is {id}</h1>
-      <h1>The name is {card?.name}</h1>
+    <div className="container">
+      <h1>Card Details</h1>
+      <div className="card-details">
+        <h1>{card?.name}</h1>
+        <div className="image-container">
+          <img src={card.imageUrl}></img>
+        </div>
+        <p className="card-text">{card.text}</p>
+      </div>
     </div>
   );
 };

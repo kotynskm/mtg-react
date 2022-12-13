@@ -28,8 +28,8 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <h1>Homepage</h1>
+    <div className="container">
+      <h1>Welcome to MTG React App!</h1>
       <Button variant="contained" color="success" onClick={handleClick}>
         Click For Cards
       </Button>

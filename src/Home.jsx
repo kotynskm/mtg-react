@@ -20,8 +20,6 @@ const Home = () => {
     const cards = await res.json();
     // set cards to json res
     setCards(cards.cards.slice(0, 10));
-
-    console.log(cards.cards);
   };
 
   // handle click to display 10 cards

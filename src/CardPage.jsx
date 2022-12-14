@@ -23,24 +23,26 @@ const CardPage = () => {
   };
 
   return (
-    <div className="container">
+    <>
       <h1>This is the cards page</h1>
-      <div className="card-results">
-        <Grid container>
-          {cards.map((card) => {
-            return (
-              <Card
-                name={card.name}
-                url={card.imageUrl}
-                text={card.text}
-                id={card.id}
-                key={card.id}
-              />
-            );
-          })}
-        </Grid>
+      <div className="container">
+        <div className="card-results">
+          <Grid container>
+            {cards.map((card) => {
+              return (
+                <Card
+                  name={card.name}
+                  url={card.imageUrl}
+                  text={card.text}
+                  id={card.id}
+                  key={card.id}
+                />
+              );
+            })}
+          </Grid>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

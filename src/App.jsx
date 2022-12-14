@@ -1,11 +1,10 @@
 import { createRoot } from "react-dom/client";
-import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "@fontsource/roboto/300.css";
 import Home from "./Home";
 import Details from "./Details";
-import Header from "./Header";
-import Drawer from "./Drawer";
+import ResDrawer from "./ResDrawer";
 import CardPage from "./CardPage";
 import { Container } from "@mui/system";
 
@@ -22,9 +21,8 @@ const queryClient = new QueryClient({
 const App = () => {
   return (
     <div>
-      <Header />
-      <Container>
-        <Drawer />
+      <ResDrawer />
+      <Container maxWidth="md">
         <BrowserRouter>
           <QueryClientProvider client={queryClient}>
             <Routes>

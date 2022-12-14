@@ -7,7 +7,7 @@ const Card = ({ name, url, id }) => {
     url = "./assets/Magic_the_gathering-card_back.jpg";
   }
   return (
-    <Grid item md={3}>
+    <Grid item md={4}>
       <Link to={`cards/${id}`} className="card">
         <div className="card-info">
           <div class="item">

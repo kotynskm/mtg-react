@@ -11,12 +11,3 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-.container,
-.loading-pane {
-  margin-top: 100px;
-}
-
-/* .appbar-width {
-  width: calc(100% - 240px);
-} */

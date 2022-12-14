@@ -7,16 +7,18 @@ const Card = ({ name, url, id }) => {
     url = "./assets/Magic_the_gathering-card_back.jpg";
   }
   return (
-    <Link to={`cards/${id}`} className="card">
-      <div className="card-info">
-        <div class="item">
-          <h1>{name}</h1>
-          <div className="image-container">
-            <img src={url}></img>
+    <Grid item md={3}>
+      <Link to={`cards/${id}`} className="card">
+        <div className="card-info">
+          <div class="item">
+            <h1>{name}</h1>
+            <div className="image-container">
+              <img src={url}></img>
+            </div>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </Grid>
   );
 };
 

@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import SvgIcon from "@mui/material/SvgIcon";
+import "./style.css";
 
 function HomeIcon(props) {
   return (
@@ -18,7 +19,11 @@ function HomeIcon(props) {
 const Header = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" style={{ background: "#000000" }}>
+      <AppBar
+        className="appbar-width"
+        position="fixed"
+        style={{ background: "#000000" }}
+      >
         <Toolbar>
           <IconButton
             size="large"

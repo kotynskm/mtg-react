@@ -2,9 +2,12 @@ import * as React from "react";
 import { useEffect, useState } from "react";
 import { Grid } from "@mui/material";
 import Card from "./Card";
+import Pagination from "./Pagination";
 
 const CardPage = () => {
   const [cards, setCards] = useState([]);
+  const [currPage, setCurrPage] = useState(1);
+  const [cardsPerPage, setCardsPerPage] = useState(6);
 
   // effects run everytime you render the app, so must use [] to only render it once
   useEffect(() => {
@@ -19,30 +22,38 @@ const CardPage = () => {
     const cards = await res.json();
     console.log(cards);
     // set cards to json res
-    setCards(cards.cards.slice(0, 12));
+    setCards(cards.cards);
   };
 
+  const lastIndex = currPage * cardsPerPage;
+  const firstIndex = lastIndex - cardsPerPage;
+  const currCards = cards.slice(firstIndex, lastIndex);
+  console.log(currCards);
+
   return (
-    <>
-      <h1>This is the cards page</h1>
-      <div className="container">
-        <div className="card-results">
-          <Grid container>
-            {cards.map((card) => {
-              return (
-                <Card
-                  name={card.name}
-                  url={card.imageUrl}
-                  text={card.text}
-                  id={card.id}
-                  key={card.id}
-                />
-              );
-            })}
-          </Grid>
-        </div>
+    <div className="container">
+      <div className="card-results">
+        <Grid container>
+          {currCards.map((card) => {
+            return (
+              <Card
+                name={card.name}
+                url={card.imageUrl}
+                text={card.text}
+                id={card.id}
+                key={card.id}
+              />
+            );
+          })}
+          <Pagination
+            totalCards={cards.length}
+            cardsPerPage={cardsPerPage}
+            setCurrentPage={setCurrPage}
+            currentPage={currPage}
+          />
+        </Grid>
       </div>
-    </>
+    </div>
   );
 };
 

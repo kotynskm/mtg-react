@@ -11,7 +11,7 @@ const Card = ({ name, url, id }) => {
       <Link to={`cards/${id}`} className="card">
         <div className="card-info">
           <div class="item">
-            <h1>{name}</h1>
+            <h3>{name}</h3>
             <div className="image-container">
               <img src={url}></img>
             </div>

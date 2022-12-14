@@ -21,7 +21,7 @@ const Details = () => {
     <div className="container">
       <h1>Card Details</h1>
       <div className="card-details">
-        <h1>{card?.name}</h1>
+        <h2>{card?.name}</h2>
         <div className="image-container">
           <img src={card.imageUrl}></img>
         </div>

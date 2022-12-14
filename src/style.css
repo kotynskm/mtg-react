@@ -11,3 +11,43 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.card-info,
+.card-details,
+.container {
+  text-align: center;
+}
+
+.card-results {
+  margin-left: 60px;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-right: 50px;
+}
+
+.pagination button {
+  width: 30px;
+  height: 30px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 0 10px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: #eee;
+  border-color: #eee;
+}
+
+.pagination button.active {
+  font-weight: 900;
+  border-color: #101010;
+  background: #ffba74;
+  color: #000000;
+}

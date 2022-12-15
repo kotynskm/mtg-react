@@ -42,7 +42,7 @@ function ResponsiveDrawer(props) {
           </ListItemIcon>
           <ListItemText primary="Display Cards" />
         </ListItemButton>
-        <ListItemButton>
+        <ListItemButton href="/setpage">
           <ListItemIcon>
             <SignalCellularNoSimIcon />
           </ListItemIcon>

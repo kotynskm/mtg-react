@@ -18,9 +18,12 @@ const CardPage = () => {
   const getCards = async () => {
     // make request to API
     const res = await fetch("https://api.magicthegathering.io/v1/cards");
+    console.log(res);
+
     // receive res and set to json
     const cards = await res.json();
     console.log(cards);
+
     // set cards to json res
     setCards(cards.cards);
   };

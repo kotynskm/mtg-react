@@ -1,5 +1,5 @@
 const fetchSearch = async ({ queryKey }) => {
-  // we use index 1, because that is where we specifiied the ID, the index 0 is "card"
+  // we use index 1, because that is where we specifiied the ID, the index 0 is "type"
   const type = queryKey[1];
 
   const res = await fetch(

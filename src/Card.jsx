@@ -13,7 +13,7 @@ const Card = ({ name, url, id }) => {
           <div class="item">
             <h3>{name}</h3>
             <div className="image-container">
-              <img src={url}></img>
+              <img src={url} alt="No Image to Display."></img>
             </div>
           </div>
         </div>

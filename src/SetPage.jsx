@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import * as React from "react";
 import { useState } from "react";
 import fetchSearch from "./fetchSearch";
+import SetItem from "./SetItem";
 
 const SetPage = () => {
   const [reqParams, setReqParams] = useState({ type: "" });
@@ -24,22 +25,7 @@ const SetPage = () => {
     <div className="container">
       <h1>Search MTG Sets</h1>
       <div className="dropdown">
-        <form
-          onSubmit={handleSubmit}
-          // only call API on form submit
-          //   onSubmit={(e) => {
-          //     e.preventDefault();
-          //     const formData = new FormData(e.target);
-          //     console.log(formData);
-          //     // make req obj with form data
-          //     const type = {
-          //       type: formData.get("type") ?? "",
-          //     };
-          //     console.log(type);
-          //     // update reqParams
-          //     setReqParams(type);
-          //   }}
-        >
+        <form onSubmit={handleSubmit}>
           <label htmlFor="type">
             <span className="choose">Select Set Type</span>
             <select
@@ -67,7 +53,14 @@ const SetPage = () => {
 
       <div className="display">
         {sets.map((set) => {
-          return <h1>{set.name}</h1>;
+          return (
+            <SetItem
+              code={set.code}
+              name={set.name}
+              type={set.type}
+              key={set.releaseDate}
+            />
+          );
         })}
       </div>
     </div>

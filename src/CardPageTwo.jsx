@@ -4,7 +4,7 @@ import { Grid } from "@mui/material";
 import Card from "./Card";
 import Pagination from "./Pagination";
 import { useQuery } from "@tanstack/react-query";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import fetchSetCards from "./fetchSetCards";
 
 const CardPageTwo = () => {
@@ -18,13 +18,27 @@ const CardPageTwo = () => {
 
   // display a loading message while waiting for response to come back from API req
   if (result.isLoading) {
-    return <div className="loading-pane">Loading Card...</div>;
+    return <div className="loading-pane">Loading...</div>;
+  }
+
+  const card = result.data.cards;
+  if (card.length === 0) {
+    return (
+      <div className="container">
+        <h2>
+          There are no cards to display for this set. Please try another search.
+        </h2>
+        <Link to={"/setpage"}>
+          <button className="button-81">Go Back</button>
+        </Link>
+      </div>
+    );
   }
   // after waiting for res to come back, we can then access card from the data object
   // if we try to access without waiting for res to load, we will get an error as data is undefined
-  const card = result.data.cards;
+  // const card = result.data.cards;
 
-  console.log(card);
+  console.log(`this is card ${card}`);
 
   const lastIndex = currPage * cardsPerPage;
   const firstIndex = lastIndex - cardsPerPage;

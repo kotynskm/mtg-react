@@ -16,8 +16,9 @@ const SetPage = () => {
 
   const results = useQuery(["search", reqParams], fetchSearch);
   if (results.isLoading) {
-    return <div className="loading-pane">Loading Sets...</div>;
+    return <div className="loading-pane">Loading...</div>;
   }
+
   const sets = results.data.sets;
   console.log(sets);
 

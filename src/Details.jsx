@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
 import fetchCard from "./fetchCard";
+import img1 from "./assets/Magic_the_gathering-card_back.jpg";
 
 const Details = () => {
   // get ID from url parameters
@@ -23,7 +24,7 @@ const Details = () => {
       <div className="card-details">
         <h2>{card?.name}</h2>
         <div className="image-container">
-          <img src={card.imageUrl}></img>
+          <img src={card.imageUrl ? card.imageUrl : img1}></img>
         </div>
         <p className="card-text">{card.text}</p>
       </div>

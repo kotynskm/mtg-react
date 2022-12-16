@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom";
 import { Grid } from "@mui/material";
+import img1 from "./assets/Magic_the_gathering-card_back.jpg";
 
 const Card = ({ name, url, id }) => {
-  // if no url found, show mtg card back as image
-  if (!url) {
-    url = "./assets/Magic_the_gathering-card_back.jpg";
-  }
   return (
     <Grid item md={4}>
       <Link to={`cards/${id}`} className="card">
@@ -13,7 +10,7 @@ const Card = ({ name, url, id }) => {
           <div class="item">
             <h3>{name}</h3>
             <div className="image-container">
-              <img src={url} alt="No Image to Display."></img>
+              <img src={url ? url : img1}></img>
             </div>
           </div>
         </div>

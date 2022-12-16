@@ -94,3 +94,12 @@ select {
     padding: 1rem 2rem;
   }
 }
+
+.card-text {
+  background-color: rgba(0, 0, 0, 0.517);
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+}

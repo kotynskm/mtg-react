@@ -26,7 +26,9 @@ const Details = () => {
         <div className="image-container">
           <img src={card.imageUrl ? card.imageUrl : img1}></img>
         </div>
-        <p className="card-text">{card.text}</p>
+        <div className="card-text">
+          <p>{card.text}</p>
+        </div>
       </div>
     </div>
   );

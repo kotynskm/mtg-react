@@ -26,7 +26,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1rem;
   margin-right: 50px;
 }
 
@@ -102,4 +101,5 @@ select {
   width: auto;
   padding: 10px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }

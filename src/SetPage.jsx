@@ -37,15 +37,13 @@ const SetPage = () => {
               }}
             >
               <option />
+              <option value="core">Core</option>
               <option value="starter">Starter</option>
               <option value="commander">Commander</option>
-              <option value="core">Core</option>
-              <option value="planechase">Planechase</option>
               <option value="box">Box</option>
               <option value="funny">Funny</option>
               <option value="expansion">Expansion</option>
-              <option value="memorabilia">Memorabilia</option>
-              <option value="token">Token</option>
+              <option value="planechase">Planechase</option>
             </select>
           </label>
           <button className="button-81">Submit</button>
@@ -59,7 +57,7 @@ const SetPage = () => {
               code={set.code}
               name={set.name}
               type={set.type}
-              key={set.releaseDate}
+              key={Math.floor(Math.random() * 100)}
             />
           );
         })}

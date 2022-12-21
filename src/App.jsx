@@ -29,7 +29,6 @@ const App = () => {
           <QueryClientProvider client={queryClient}>
             <Routes>
               <Route path="/" element={<Home />}></Route>
-              <Route path="/cardpage" element={<CardPage />}></Route>
               <Route path="/cardpage/cards/:id" element={<Details />}></Route>
               <Route path="/setpage" element={<SetPage />}></Route>
               <Route

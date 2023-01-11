@@ -4,9 +4,9 @@
 
 # Project Overview
 
-This is a React app created to increase my knowledge of React and it's features as well as pay tribute to one of my favorite cards games - Magic the Gathering!
+This is a React app that pays tribute to one of my favorite cards games - Magic the Gathering!
 
-This project employs the use of React Router, Material UI, useQuery, and API requests.
+This project employs the use of React Router, Material UI, useQuery, Pagination, and API requests.
 
 ---
 

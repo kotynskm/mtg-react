@@ -52,7 +52,7 @@ function ResponsiveDrawer(props) {
           <ListItemIcon>
             <SignalCellularNoSimIcon />
           </ListItemIcon>
-          <ListItemText primary="Card Search" />
+          <ListItemText primary="Favorite Cards" />
         </ListItemButton>
       </List>
       <Divider />

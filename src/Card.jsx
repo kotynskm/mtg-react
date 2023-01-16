@@ -4,7 +4,7 @@ import img1 from "./assets/Magic_the_gathering-card_back.jpg";
 
 const Card = ({ name, url, id }) => {
   return (
-    <Grid item md={4}>
+    <Grid item md={6}>
       <Link to={`cards/${id}`} className="card">
         <div className="card-info">
           <div class="item">

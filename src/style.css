@@ -17,8 +17,20 @@ body {
 .container {
   text-align: center;
 }
+.card-info {
+  margin: 10px;
+}
+
+.container-fave {
+  text-align: center;
+  display: grid;
+}
 
 .card-results {
+  margin-left: 60px;
+}
+
+.card-results-favorites {
   margin-left: 60px;
 }
 

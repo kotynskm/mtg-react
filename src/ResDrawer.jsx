@@ -48,7 +48,7 @@ function ResponsiveDrawer(props) {
           </ListItemIcon>
           <ListItemText primary="Display Sets" />
         </ListItemButton>
-        <ListItemButton>
+        <ListItemButton href="/favorites">
           <ListItemIcon>
             <SignalCellularNoSimIcon />
           </ListItemIcon>

@@ -7,6 +7,7 @@ import Details from "./Details";
 import ResDrawer from "./ResDrawer";
 import SetPage from "./SetPage";
 import CardPage from "./CardPage";
+import Favorites from "./Favorites";
 import { Container } from "@mui/system";
 
 // establish queryClient for our cache and how long items persist in cache
@@ -31,6 +32,7 @@ const App = () => {
               <Route path="/cardpage/cards/:id" element={<Details />}></Route>
               <Route path="/setpage" element={<SetPage />}></Route>
               <Route path="/setpage/sets/:code" element={<CardPage />}></Route>
+              <Route path="/favorites" element={<Favorites />}></Route>
               <Route
                 path="/setpage/sets/:code/cards/:id"
                 element={<Details />}

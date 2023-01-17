@@ -41,7 +41,12 @@ const Favorites = () => {
           {cards &&
             cards.map((card) => {
               return (
-                <FavoriteCard name={card.name} url={card.img} key={card._id} />
+                <FavoriteCard
+                  name={card.name}
+                  url={card.img}
+                  id={card._id}
+                  key={card._id}
+                />
               );
             })}
           {/* <Pagination

@@ -9,7 +9,7 @@ const FavoriteCard = ({ name, url, id }) => {
         <div className="card-info">
           <div class="item">
             <h3>{name}</h3>
-
+            <h2>{id}</h2>
             <div className="image-container">
               <img src={url ? url : img1}></img>
             </div>

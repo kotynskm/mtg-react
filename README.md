@@ -8,16 +8,17 @@ This is a React app that pays tribute to one of my favorite cards games - Magic 
 
 The frontend employs the use of React, React Router, Material UI, and Pagination. The backend features API requests with fetch and useQuery, routes and controllers with Node.js and Express.js, with MongoDB as the database.
 
-Cards can be searched by set name, individual card details can be viewed, and cards can be favorited by adding the card to the database.
+Cards can be searched by set name, individual card details can be viewed, and cards can be favorited (added to database) or deleted.
 
 ---
 
 ## Features
 
+- Requests to Magic The Gathering Developers API
 - Search cards by set
 - View details for specific cards
-- API requests
 - Add cards to favorites
+- Delete cards from favorites
 - Material UI for responsiveness and layout
 
 Cards Display Page:

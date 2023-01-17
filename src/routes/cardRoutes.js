@@ -6,5 +6,6 @@ const cardController = require("../controllers/cardController");
 
 // routes
 router.route("/").get(cardController.getAllCards);
+router.route("/add").post(cardController.addCard);
 
 module.exports = router;

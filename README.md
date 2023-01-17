@@ -4,9 +4,11 @@
 
 # Project Overview
 
-This is a React app that pays tribute to one of my favorite cards games - Magic the Gathering!
+This is a React app that pays tribute to one of my favorite cards games - Magic the Gathering! It features frontend and backend functionality.
 
-This project employs the use of React Router, Material UI, useQuery, Pagination, and API requests.
+The frontend employs the use of React, React Router, Material UI, and Pagination. The backend features API requests with fetch and useQuery, routes and controllers with Node.js and Express.js, with MongoDB as the database.
+
+Cards can be searched by set name, individual card details can be viewed, and cards can be favorited by adding the card to the database.
 
 ---
 
@@ -15,23 +17,32 @@ This project employs the use of React Router, Material UI, useQuery, Pagination,
 - Search cards by set
 - View details for specific cards
 - API requests
+- Add cards to favorites
 - Material UI for responsiveness and layout
 
 Cards Display Page:
 
-<img src="src/assets/cardspage.png">
+<img src="src/assets/card-page.png">
 
 Cards Detail Page:
 
-<img src="src/assets/card.png">
+<img src="src/assets/card-details.png">
+
+Set Search Options:
+
+<img src="src/assets/search-box.png">
 
 Set Search Page:
 
-<img src="src/assets/setsearch.png">
+<img src="src/assets/search-page.png">
+
+Favorite Cards Page:
+
+<img src="src/assets/favorite-page.png">
 
 ## Technologies
 
-**Languages/Frameworks/Database:** React, React Router, useQuery, API requests, Material UI
+**Languages/Frameworks/Database:** React, React Router, useQuery, API requests, Material UI, Pagination, MongoDB, Node.js, Express.js, Vite
 
 # <a name="about"></a>Learn More About the Developer
 

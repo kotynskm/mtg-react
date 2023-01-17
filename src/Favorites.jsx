@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Grid } from "@mui/material";
-import Card from "./Card";
+import FavoriteCard from "./FavoriteCard";
 import Pagination from "./Pagination";
 
 const Favorites = () => {
@@ -30,9 +30,9 @@ const Favorites = () => {
   const firstIndex = lastIndex - cardsPerPage;
   const currCards = cards.slice(firstIndex, lastIndex);
   return (
-    <div className="container-fave">
-      <h1>Favorite Cards</h1>
-      <div className="fave-items">
+    <div className="container">
+      <h1 className="fave-title">Favorite Cards</h1>
+      <div className="card-results">
         {/* {cards &&
           cards.map((card) => {
             return <Card name={card.name} url={card.img} key={card._id} />;
@@ -40,7 +40,9 @@ const Favorites = () => {
         <Grid container>
           {cards &&
             cards.map((card) => {
-              return <Card name={card.name} url={card.img} key={card._id} />;
+              return (
+                <FavoriteCard name={card.name} url={card.img} key={card._id} />
+              );
             })}
           {/* <Pagination
             totalCards={cards.length}

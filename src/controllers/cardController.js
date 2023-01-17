@@ -38,3 +38,12 @@ exports.addCard = async (req, res) => {
     });
   }
 };
+
+// delete card from database
+exports.deleteCard = async (req, res) => {
+  await Card.findByIdAndDelete(req.params.id)
+    .then((response) => {
+      res.send("success");
+    })
+    .catch((err) => console.log(err));
+};

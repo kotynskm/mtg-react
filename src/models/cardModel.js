@@ -7,10 +7,13 @@ const cardSchema = new Schema({
     type: String,
     required: true,
   },
-  img: {
+  imageUrl: {
     type: String,
   },
   text: {
+    type: String,
+  },
+  id: {
     type: String,
   },
 });

@@ -44,8 +44,9 @@ const Favorites = () => {
               return (
                 <FavoriteCard
                   name={card.name}
-                  url={card.img}
-                  id={card._id}
+                  url={card.imageUrl}
+                  id={card.id}
+                  databaseID={card._id}
                   key={card._id}
                 />
               );

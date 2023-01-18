@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Grid } from "@mui/material";
 import img1 from "./assets/Magic_the_gathering-card_back.jpg";
+import swal from "sweetalert";
 
 const Card = ({ name, url, id }) => {
   const handleClick = async () => {
@@ -9,13 +10,14 @@ const Card = ({ name, url, id }) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         name: name,
-        img: url,
+        imageUrl: url,
+        id: id,
       }),
     };
 
     const res = await fetch("http://localhost:3000/add", requestOptions);
     const jsonRes = await res.json();
-    console.log(jsonRes);
+    swal("Card added to Favorites!");
   };
 
   return (

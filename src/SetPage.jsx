@@ -20,7 +20,6 @@ const SetPage = () => {
   }
 
   const sets = results.data.sets;
-  console.log(sets);
 
   return (
     <div className="container">

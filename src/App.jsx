@@ -33,6 +33,7 @@ const App = () => {
               <Route path="/setpage/" element={<SetPage />}></Route>
               <Route path="/setpage/sets/:code" element={<CardPage />}></Route>
               <Route path="/favorites/" element={<Favorites />}></Route>
+              <Route path="/favorites/cards/:id" element={<Details />}></Route>
               <Route
                 path="/setpage/sets/:code/cards/:id"
                 element={<Details />}

@@ -22,6 +22,7 @@ const CardPage = () => {
   }
 
   const card = result.data.cards;
+  console.log(card[0]);
   if (card.length === 0) {
     return (
       <div className="container">

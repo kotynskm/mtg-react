@@ -1,15 +1,16 @@
 import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
+import swal from "sweetalert";
 import img1 from "./assets/Magic_the_gathering-card_back.jpg";
 
-const FavoriteCard = ({ name, url, id }) => {
+const FavoriteCard = ({ name, url, id, databaseID }) => {
   // trigger page reload - also update page by updating state in react
   const refreshPage = () => {
     window.location.reload(false);
   };
 
   const handleClick = () => {
-    fetch("http://localhost:3000/delete/" + id, {
+    fetch("http://localhost:3000/delete/" + databaseID, {
       method: "POST",
     })
       .then((res) => res.text()) // or res.json()

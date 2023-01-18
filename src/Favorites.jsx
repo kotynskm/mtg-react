@@ -29,6 +29,7 @@ const Favorites = () => {
   const lastIndex = currPage * cardsPerPage;
   const firstIndex = lastIndex - cardsPerPage;
   const currCards = cards.slice(firstIndex, lastIndex);
+
   return (
     <div className="container">
       <h1 className="fave-title">Favorite Cards</h1>

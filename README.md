@@ -19,6 +19,7 @@ Cards can be searched by set name, individual card details can be viewed, and ca
 - View details for specific cards
 - Add cards to favorites
 - Delete cards from favorites
+- Track hit points for a match
 - Material UI for responsiveness and layout
 
 Cards Display Page:
@@ -41,9 +42,13 @@ Favorite Cards Page:
 
 <img src="src/assets/favorite-page.png">
 
+Hit Point Counter:
+
+<img src="src/assets/hitpoints.png">
+
 ## Technologies
 
-**Languages/Frameworks/Database:** React, React Router, useQuery, API requests, Material UI, Pagination, MongoDB, Node.js, Express.js, Vite
+**Languages/Frameworks/Database:** React, React Router, useQuery, useState, API requests, Material UI, Pagination, MongoDB, Node.js, Express.js, Vite
 
 # <a name="about"></a>Learn More About the Developer
 

@@ -9,6 +9,7 @@ import SetPage from "./SetPage";
 import CardPage from "./CardPage";
 import Favorites from "./Favorites";
 import { Container } from "@mui/system";
+import HitPoints from "./HitPoints";
 
 // establish queryClient for our cache and how long items persist in cache
 const queryClient = new QueryClient({
@@ -38,6 +39,7 @@ const App = () => {
                 path="/setpage/sets/:code/cards/:id"
                 element={<Details />}
               ></Route>
+              <Route path="/hitpoints/" element={<HitPoints />}></Route>
             </Routes>
           </QueryClientProvider>
         </BrowserRouter>

@@ -54,6 +54,12 @@ function ResponsiveDrawer(props) {
           </ListItemIcon>
           <ListItemText primary="Favorite Cards" />
         </ListItemButton>
+        <ListItemButton href="/hitpoints/">
+          <ListItemIcon>
+            <SignalCellularNoSimIcon />
+          </ListItemIcon>
+          <ListItemText primary="Hit Point Counter" />
+        </ListItemButton>
       </List>
       <Divider />
     </div>

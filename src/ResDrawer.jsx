@@ -95,7 +95,7 @@ function ResponsiveDrawer(props) {
           <Button
             color="inherit"
             target="_blank"
-            href="https://kotynskm.github.io/portfolio-website/"
+            href="https://kaileykotynski.netlify.app"
           >
             About The Developer
           </Button>

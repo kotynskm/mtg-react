@@ -21,6 +21,7 @@ Cards can be searched by set name, individual card details can be viewed, and ca
 - Delete cards from favorites
 - Track hit points for a match
 - Material UI for responsiveness and layout
+- Pagination
 
 Cards Display Page:
 

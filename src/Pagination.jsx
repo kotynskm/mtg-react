@@ -8,6 +8,7 @@ export const Pagination = ({
 }) => {
   let pages = [];
 
+  // to figure out how many pages we need
   for (let i = 1; i <= Math.ceil(totalCards / cardsPerPage); i++) {
     pages.push(i);
   }

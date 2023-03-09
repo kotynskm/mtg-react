@@ -39,8 +39,7 @@ const CardPage = () => {
   // if we try to access without waiting for res to load, we will get an error as data is undefined
   // const card = result.data.cards;
 
-  // console.log(`this is card ${card}`);
-
+  // we need to calc first and last index for pagination
   const lastIndex = currPage * cardsPerPage;
   const firstIndex = lastIndex - cardsPerPage;
   const currCards = card.slice(firstIndex, lastIndex);

@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
-import img1 from "./assets/Magic_the_gathering-card_back.jpg";
+import defaultImg from "./assets/Magic_the_gathering-card_back.jpg";
 
 const FavoriteCard = ({ name, url, id, databaseID, handleDelete }) => {
   return (
@@ -11,7 +11,7 @@ const FavoriteCard = ({ name, url, id, databaseID, handleDelete }) => {
           <div class="item">
             <h3>{name}</h3>
             <div className="image-container">
-              <img src={url ? url : img1}></img>
+              <img src={url ? url : defaultImg}></img>
             </div>
           </div>
         </div>

@@ -15,6 +15,7 @@ const SetPage = () => {
   };
 
   const results = useQuery(["search", reqParams], fetchSearch);
+
   if (results.isLoading) {
     return <div className="loading-pane">Loading...</div>;
   }
@@ -56,7 +57,7 @@ const SetPage = () => {
               code={set.code}
               name={set.name}
               type={set.type}
-              key={Math.floor(Math.random() * 100)}
+              key={set.code}
             />
           );
         })}

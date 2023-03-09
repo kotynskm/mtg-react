@@ -15,6 +15,7 @@ const Card = ({ name, url, id }) => {
       }),
     };
 
+    // TODO figure out cors request so I can remove localhost from the fetch url
     const res = await fetch("http://localhost:3000/add", requestOptions);
     const jsonRes = await res.json();
     swal("Card added to Favorites!");

@@ -49,6 +49,7 @@ const App = () => {
 };
 
 // get the div with the ID root, create the root using this container, render our App
-const container = document.getElementById("root");
-const root = createRoot(container);
-root.render(<App />);
+// const container = document.getElementById("root");
+// const root = createRoot(container);
+// root.render(<App />);
+export default App;

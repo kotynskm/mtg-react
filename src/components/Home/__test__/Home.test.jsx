@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { waitFor } from "@testing-library/react";
-import Home from "./Home";
+import Home from "../Home";
 
 // use GET by
 it("should have welcome to MTG app", () => {

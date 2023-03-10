@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Grid } from "@mui/material";
 import FavoriteCard from "./FavoriteCard";
-import Pagination from "./Pagination";
+import Pagination from "../Pagination/Pagination";
 
 const Favorites = () => {
   const [cards, setCards] = useState([]);

@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
-import defaultImg from "./assets/Magic_the_gathering-card_back.jpg";
+import defaultImg from "../../assets/Magic_the_gathering-card_back.jpg";
 
 const FavoriteCard = ({ name, url, id, databaseID, handleDelete }) => {
   return (

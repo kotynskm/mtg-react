@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useState } from "react";
 import { Grid } from "@mui/material";
-import Card from "./Card";
-import Pagination from "./Pagination";
+import Card from "../Card/Card";
+import Pagination from "../Pagination/Pagination";
 import { useQuery } from "@tanstack/react-query";
 import { Link, useParams } from "react-router-dom";
 import fetchSetCards from "./fetchSetCards";

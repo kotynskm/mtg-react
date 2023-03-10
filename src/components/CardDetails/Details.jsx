@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
 import fetchCard from "./fetchCard";
-import img1 from "./assets/Magic_the_gathering-card_back.jpg";
+import img1 from "../../assets/Magic_the_gathering-card_back.jpg";
 
 const Details = () => {
   // get ID from url parameters

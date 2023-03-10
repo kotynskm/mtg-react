@@ -2,14 +2,14 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "@fontsource/roboto/300.css";
-import Home from "./Home";
-import Details from "./Details";
-import ResDrawer from "./ResDrawer";
-import SetPage from "./SetPage";
-import CardPage from "./CardPage";
-import Favorites from "./Favorites";
+import Home from "./components/Home/Home";
+import Details from "./components/CardDetails/Details";
+import ResDrawer from "./components/ResDrawer/ResDrawer";
+import SetPage from "./components/Set/SetPage";
+import CardPage from "./components/CardPage/CardPage";
+import Favorites from "./components/Favorites/Favorites";
 import { Container } from "@mui/system";
-import HitPoints from "./HitPoints";
+import HitPoints from "./components/HitPoints/HitPoints";
 
 // establish queryClient for our cache and how long items persist in cache
 const queryClient = new QueryClient({

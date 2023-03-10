@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Grid } from "@mui/material";
-import img1 from "./assets/Magic_the_gathering-card_back.jpg";
+import img1 from "../../assets/Magic_the_gathering-card_back.jpg";
 import swal from "sweetalert";
 
 const Card = ({ name, url, id }) => {

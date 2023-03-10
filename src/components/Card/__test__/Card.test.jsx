@@ -24,11 +24,13 @@ describe("Card", () => {
     waitFor(() => expect(addButton).toBeInTheDocument());
   });
 
+  //TODO:
   // should display message when card is added to favorites
-  it("should have an add favorite button", () => {
+  it("should have an add favorite button", async () => {
     render(<MockCardComponent />);
     const addButton = screen.getByRole("button", { name: /Add to Favorites/i });
     fireEvent.click(addButton);
-    waitFor(() => expect("Card added to Favorites!").toBeInTheDocument());
+    const divElement = screen.getByText("Card added to Favorites!");
+    await waitFor(() => expect(divElement).toBeInTheDocument());
   });
 });

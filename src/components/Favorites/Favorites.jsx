@@ -41,7 +41,7 @@ const Favorites = () => {
   return (
     <div className="container">
       <h1 className="fave-title">Favorite Cards</h1>
-      <div className="card-results">
+      <div className="card-results" data-testid="favorite-cards">
         {/* {cards &&
           cards.map((card) => {
             return <Card name={card.name} url={card.img} key={card._id} />;

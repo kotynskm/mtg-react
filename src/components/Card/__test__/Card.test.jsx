@@ -1,8 +1,10 @@
 import { BorderStyle } from "@mui/icons-material";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { BrowserRouter } from "react-router-dom";
 import Card from "../Card";
+import "@testing-library/jest-dom";
 // error when creating test due to fetch not being defined in node, installed node fetch
 import fetch from "node-fetch";
 globalThis.fetch = fetch;
@@ -24,13 +26,18 @@ describe("Card", () => {
     waitFor(() => expect(addButton).toBeInTheDocument());
   });
 
-  //TODO:
   // should display message when card is added to favorites
-  it("should have an add favorite button", async () => {
+  it("should have a popup for cards added to favorites", async () => {
     render(<MockCardComponent />);
     const addButton = screen.getByRole("button", { name: /Add to Favorites/i });
-    fireEvent.click(addButton);
-    const divElement = screen.getByText("Card added to Favorites!");
-    await waitFor(() => expect(divElement).toBeInTheDocument());
+    userEvent.click(addButton);
+    screen.debug();
+    // const divElement = screen.getByText("Card added to Favorites!");
+    // expect(divElement).toBeInTheDocument();
+    await waitFor(() => {
+      // expect(screen.getByText("Card added to Favorites!")).toBeInTheDocument();
+      const divElement = screen.getByText("Card added to Favorites!");
+      expect(divElement).toBeInTheDocument();
+    });
   });
 });

@@ -10,6 +10,8 @@ The frontend employs the use of React, React Router, Material UI, and Pagination
 
 Cards can be searched by set name, individual card details can be viewed, and cards can be favorited (added to database) or deleted.
 
+Testing is performed with react testing library, vitest, and cypress for end to end testing.
+
 ---
 
 ## Features
